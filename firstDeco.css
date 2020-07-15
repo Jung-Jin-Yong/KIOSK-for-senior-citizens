@@ -18,11 +18,19 @@
 }
 
 #grid{
-  width: 60%;
+  width: 50%;
   margin: auto;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 250px 250px 250px;
 }
+
+@media(max-width: 800px) {
+  #grid{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+  }
+} /* 모바일 디바이스용*/
 
 .menu{
   font-size: 50px;
