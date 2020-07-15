@@ -18,14 +18,15 @@
 }
 
 #grid{
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: 300px 300px 300px;
 }
 
 @media(max-width: 800px) {
   #grid{
+    width:90%;
     margin: auto;
     display: grid;
     grid-template-columns: 200px 200px 200px;
