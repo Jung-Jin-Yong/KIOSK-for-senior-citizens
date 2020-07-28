@@ -9,11 +9,17 @@
   <body>
     <script src="engine.js"></script>
     <div id="info">
-      <h1 class="title">주문</h1>
-      <br><br><br><br><br><br><br>
-      <p class="explanation">친절히 안내해드리겠습니다.</p>
-      <p class="explanation">여기를 눌러주세요</p>
-      <input type="button" value="버튼" id="pushButton" onClick="location.href='firstStep.html'">
-    </div>
+      <h1 class="title">원하시는 메뉴 주문 서비스를 선택해주세요</h1>
+      <br><br><br>
+        <div id="grid">
+          <div class="menu">
+            <p id="menu1">직접 주문하기</p>
+          </div>
+          <div class="menu">
+            <p id="menu2">전문가에게 맡기기</p>
+          </div>
+          <input type="button" value="버튼" class="push">
+          <input type="button" value="버튼" class="push" onclick="location.href='firstStep.html'">
+        </div>
   </body>
 </html>

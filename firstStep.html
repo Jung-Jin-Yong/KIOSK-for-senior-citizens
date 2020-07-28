@@ -10,20 +10,20 @@
     <script src="engine.js"></script>
     <div id="info">
       <h1 class="title">1단계</h1>
-      <p class="explanation">원하는 종류의 버튼을 눌러주세요</p>
+      <p class="explanation">먹고 싶은 음식 종류의 버튼을 눌러주세요</p>
       <div id="grid">
         <div class="menu">
-          <p>햄버거만</p>
+          <p>든든한 한끼</p>(가격대 7천원 이상)
         </div>
         <div class="menu">
-          <p>햄버거랑</p> 음료랑 같이
+          <p>간식처럼 가볍게 한끼</p>(가격대 3천원에서 7천원사이)
         </div>
         <div class="menu">
-          <p>음료나</p> 간식류만
+          <p>진짜 간식</p>(가격대 천원에서 3천원사이)
         </div>
-        <input type="button" value="버튼" class="menuButton" onClick="location.href='secondStep.html'">
-        <input type="button" value="버튼" class="menuButton" onClick="location.href='secondStep.html'">
-        <input type="button" value="버튼" class="menuButton" onClick="location.href='secondStep.html'">
+        <input type="button" value="버튼" class="menuButton" onClick="location.href='secondStep.html'" id="onlyHamburger">
+        <input id="hamburgerAndDrink" type="button" value="버튼" class="menuButton" onClick="location.href='secondStep.html'">
+        <input id="onlyDrinkOrSnack" type="button" value="버튼" class="menuButton" onClick="location.href='secondStep.html'">
       </div>
   </body>
 </html>

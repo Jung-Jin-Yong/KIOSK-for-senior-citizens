@@ -1,3 +1,1 @@
-function start(){
-  
-}
+const onlyHamburger=
