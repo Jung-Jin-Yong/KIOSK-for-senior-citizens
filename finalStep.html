@@ -9,17 +9,17 @@
   <body>
     <script src="engine.js"></script>
     <div id="info">
-      <h1 class="title">원하시는 메뉴 주문 서비스를 선택해주세요</h1>
+      <h1 class="title">계산 방법을 선택해주세요 또는 <input type="button" value="주문취소" class="push" onClick="location.href='index.html'"></h1>
       <br><br><br>
         <div id="grid">
           <div class="menu">
-            <p>직접 주문하기</p>
+            <p>현금으로 결제하기</p>
           </div>
           <div class="menu">
-            <p>쉽고 편리하게</p><p>전문가에게 맡기기</p>
+            <p>카드로 결제하기</p>
           </div>
-          <input type="button" value="버튼" class="push">
-          <input type="button" value="버튼" class="push" onclick="location.href='firstStep.html'">
+          <input type="button" value="버튼" class="push" onClick="location.href='payByCash.html'">
+          <input type="button" value="버튼" class="push" onClick="location.href='payByCard.html'">
         </div>
   </body>
 </html>
