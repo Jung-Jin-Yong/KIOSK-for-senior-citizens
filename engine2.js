@@ -132,12 +132,12 @@ window.onload = function(){
   });
 
   pushButton[0].addEventListener('click',() => {
-    localStorage.setItem('secondStep',wantingMaterial);
+    localStorage.setItem('wantingList',wantingMaterial);
   });
   pushButton[1].addEventListener('click',() => {
-    localStorage.removeItem('secondStep',wantingMaterial);
+    localStorage.removeItem('wantingList');
   });
   pushButton[2].addEventListener('click',() => {
-    localStorage.setItem('secondStep',wantingMaterial);
+    localStorage.setItem('wantingList',wantingMaterial);
   });
 }
