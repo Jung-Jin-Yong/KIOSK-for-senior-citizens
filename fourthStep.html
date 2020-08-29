@@ -9,15 +9,16 @@
   <body>
     <script src="engine4.js"></script>
     <div id="info">
-      <h1 class="title">4단계</h1>
+      <h1 class="title">3단계</h1>
       <p class="explanation">전문가의 추천 메뉴는 <span id="recommendMenu"></span>입니다!</p>
       <span>
         <p><img id="recommendMenuImage" /></p>
       </span>
       <p class="explanation"></p>
       <br><br>
-      <input type="button" value="이전" onclick="location.href='thirdStep.html'" class="push">
+      <input type="button" value="이전" onclick="location.href='secondStep.html'" class="push">
       <input type="button" value="다음" onClick="location.href='finalStep.html'" class="push">
-      <input type="button" value="다른 메뉴 추천 받기" class="push">
+      <input type="button" value="다른 메뉴 추천 받기" class="push" onClick="location.reload(true)">
+      <input type="button" value="주문 취소" class="push" onClick="location.href='index.html'">
   </body>
 </html>
