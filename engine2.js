@@ -140,4 +140,8 @@ window.onload = function(){
   pushButton[2].addEventListener('click',() => {
     localStorage.setItem('wantingList',wantingMaterial);
   });
+  pushButton[3].addEventListener('click',() => {
+    localStorage.removeItem('wantingList');
+    localStorage.removeItem('firstStep');
+  })
 }

@@ -1,5 +1,5 @@
 window.onload = function(){
-  var menuButton1 = document.querySelectorAll(".menuButton1");
+  let menuButton1 = document.querySelectorAll(".menuButton1");
   menuButton1[0].addEventListener('click',()=>{
     console.log('확인');
     localStorage.setItem(`firstStep`,`0`);
