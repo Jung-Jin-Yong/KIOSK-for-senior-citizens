@@ -13,6 +13,7 @@ window.onload = function(){
   menuButton1[2].addEventListener('click',()=>{
     console.log('확인');
     localStorage.setItem(`firstStep`,`2`);
+    localStorage.setItem('wantingList','a,b');
     console.log(localStorage);
   });
 }

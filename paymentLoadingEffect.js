@@ -3,16 +3,16 @@ window.onload = function(){
 
   function showEffect(){
     setTimeout(()=>{
-      effectArea.innerHTML = '최적의 메뉴 탐색중.';
+      effectArea.innerHTML = '결제중입니다.';
     },500);
     setTimeout(()=>{
-      effectArea.innerHTML = '최적의 메뉴 탐색중..';
+      effectArea.innerHTML = '결제중입니다..';
     },1000);
     setTimeout(()=>{
-      effectArea.innerHTML = '최적의 메뉴 탐색중...';
+      effectArea.innerHTML = '결제중입니다...';
     },1500);
     setTimeout(()=>{
-      location.href='fourthStep.html';
+      location.href='final.html';
     },2000);
   }
 

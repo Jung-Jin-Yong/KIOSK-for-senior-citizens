@@ -1,0 +1,24 @@
+.img{
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 0px auto;
+}
+
+.title{
+  text-align: center;
+  font-size: 60px;
+}
+
+.explanation{
+  text-align: center;
+  font-size: 40px;
+}
+
+.buttonArea{
+  text-align: center;
+}
+
+.push{
+  font-size: 40px;
+}

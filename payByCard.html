@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="thirdDeco.css">
+    <link rel="stylesheet" href="payByCash.css">
     <title>주문 프로그램</title>
   </head>
   <body>
-    <script src="engine.js"></script>
+    <script src="payByCard.js"></script>
     <div id="info">
       <h1 class="title">최종 결제 단계</h1>
-      <p class="explanation">카드를 꽂아 주세요</p>
-      <div class="img"></div>
+      <p class="explanation">카드를 꽂고 <input type="button" value="다음" onClick="location.href='paymentLoading.html'" class="push">을 눌러주세요</p>
       <p class="explanation"></p>
+      <img src="images/payByCard.jpg" class="img">
       <br><br>
-      <input type="button" value="이전" onclick="location.href='finalStep.html'" class="push">
-      <input type="button" value="다음" onClick="location.href='loadToEnd.html'" class="push">
+      <div class="buttonArea">
+        <input type="button" value="이전" onclick="location.href='payStep.html'" class="push">
+        <input type="button" value="다음" onClick="location.href='paymentLoading.html'" class="push">
+      </div>
   </body>
 </html>
