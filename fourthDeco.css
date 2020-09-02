@@ -1,42 +1,71 @@
-.title{
-  text-align: center;
-  font-size: 100px;
-}
+@media all and (min-width: 769px) and (min-height: 1367px) and (max-width: 1081px) and (max-height: 1920px){
+  .title{
+    text-align: center;
+    font-size: 100px;
+  }
 
-#info{
-  text-align: center;
-}
+  #info{
+    text-align: center;
+  }
 
-.explanation{
-  font-size:45px;
-}
+  .explanation{
+    font-size:45px;
+  }
 
-#grid{
-  width: 60%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-}
-
-@media(max-width: 800px) {
   #grid{
-    width:90%;
+    width: 60%;
     margin: auto;
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 300px 300px 300px;
   }
-} /* 모바일 디바이스용*/
 
-.menu{
-  font-size: 50px;
-  border: 1px solid;
+  .menu{
+    font-size: 50px;
+    border: 1px solid;
+  }
+
+  .menuButton{
+    height:100px;
+    font-size: 50px;
+  }
+
+  .push{
+    font-size: 50px;
+  }
 }
 
-.menuButton{
-  height:100px;
-  font-size: 50px;
-}
+@media all and (max-width: 769px) and (max-height: 1367px){
+  .title{
+    text-align: center;
+    font-size: 100px;
+  }
 
-.push{
-  font-size: 50px;
+  #info{
+    text-align: center;
+  }
+
+  .explanation{
+    font-size: 35px;
+  }
+
+  #grid{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+  }
+
+  .menu{
+    font-size: 50px;
+    border: 1px solid;
+  }
+
+  .menuButton{
+    height:100px;
+    font-size: 50px;
+  }
+
+  .push{
+    font-size: 35px;
+  }
 }

@@ -1,5 +1,16 @@
 window.onload = function(){
+  let pushButton = document.querySelector(".push");
   let menuButton1 = document.querySelectorAll(".menuButton1");
+
+  pushButton.addEventListener('click',()=>{
+    localStorage.removeItem('firstStep');
+    localStorage.removeItem('wantingList');
+    localStorage.removeItem('hatingList');
+    localStorage.removeItem('selectedMenu');
+    localStorage.removeItem('hereOrToGo');
+    localStorage.removeItem('selectedMenuPrice');
+  });
+
   menuButton1[0].addEventListener('click',()=>{
     console.log('확인');
     localStorage.setItem(`firstStep`,`0`);

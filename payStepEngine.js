@@ -8,6 +8,7 @@ window.onload = function(){
     localStorage.removeItem('hereOrToGo');
     localStorage.removeItem('payBy');
     localStorage.removeItem('payCheck');
+    localStorage.removeItem('selectedMenuPrice');
   });
   pushButton[1].addEventListener('click',()=>{
     localStorage.setItem('payBy','현금');

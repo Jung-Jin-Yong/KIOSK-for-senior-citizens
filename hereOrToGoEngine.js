@@ -7,6 +7,7 @@ window.onload = function(){
     localStorage.removeItem('hatingList');
     localStorage.removeItem('selectedMenu');
     localStorage.removeItem('hereOrToGo');
+    localStorage.removeItem('selectedMenuPrice');
   });
 
   pushButton[1].addEventListener('click', ()=>{

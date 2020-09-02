@@ -9,12 +9,12 @@
   .title{
     padding-top: 200px;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
   }
 
   .explanation{
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .buttonArea{
@@ -22,7 +22,7 @@
   }
 
   .push{
-    font-size: 40px;
+    font-size: 70px;
   }
 }
 
