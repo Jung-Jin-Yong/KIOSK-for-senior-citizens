@@ -51,6 +51,7 @@ window.onload = function(){
       recommendMenuImage.src = `images/${randomMenuListForSearchingImage[randomNumber]}.jpg`;
       localStorage.setItem('selectedMenu', randomMenuList[randomNumber]);
       localStorage.setItem('selectedMenuPrice',randomMenuPrice[randomNumber]);
+      localStorage.setItem('selectingMenuForSearchingImage', randomMenuListForSearchingImage[randomNumber]);
     }else {
       randomMenuRecommend();
     }

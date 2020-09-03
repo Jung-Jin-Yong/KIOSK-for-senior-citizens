@@ -12,7 +12,7 @@ window.onload = function(){
       effectArea.innerHTML = '결제중입니다...';
     },1500);
     setTimeout(()=>{
-      location.href='final.html';
+      location.href='endPage.html';
     },2000);
   }
 
