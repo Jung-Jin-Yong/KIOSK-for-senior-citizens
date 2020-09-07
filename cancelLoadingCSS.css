@@ -1,3 +1,13 @@
+@media all and (min-width: 1082px){
+  .showEffect{
+      text-align: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 300px;
+      font-size: 70px;
+  }
+}
+
 @media all and (min-width: 769px) and (min-height: 1367px) and (max-width: 1081px) and (max-height: 1920px){
   .showEffect{
       text-align: center;

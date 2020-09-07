@@ -3,6 +3,7 @@ window.onload = function(){
   var pushButton = document.querySelectorAll('.push');
   var wantingMaterial = new Array();
   var checkNum = [0,0,0,0,0,0];
+  var selectedNothingCheck = 0;
 
   menuButton2[0].addEventListener('click',()=>{
     if(checkNum[0] === 0){
@@ -10,6 +11,7 @@ window.onload = function(){
       checkNum[0] = 1;
       menuButton2[0].style.backgroundColor="blue";
       menuButton2[0].style.color="white";
+      selectedNothingCheck++;
       console.log('확인');
       console.log(wantingMaterial);
     } else {
@@ -19,6 +21,7 @@ window.onload = function(){
         }
       }
       checkNum[0] = 0;
+      selectedNothingCheck--;
       menuButton2[0].style.backgroundColor="white";
       menuButton2[0].style.color="black";
       console.log('확인');
@@ -31,6 +34,7 @@ window.onload = function(){
       checkNum[1] = 1;
       menuButton2[1].style.backgroundColor="blue";
       menuButton2[1].style.color="white";
+      selectedNothingCheck++;
       console.log('확인');
       console.log(wantingMaterial);
     } else {
@@ -40,6 +44,7 @@ window.onload = function(){
         }
       }
       checkNum[1] = 0;
+      selectedNothingCheck--;
       menuButton2[1].style.backgroundColor="white";
       menuButton2[1].style.color="black";
       console.log('확인');
@@ -52,6 +57,7 @@ window.onload = function(){
       checkNum[2] = 1;
       menuButton2[2].style.backgroundColor="blue";
       menuButton2[2].style.color="white";
+      selectedNothingCheck++;
       console.log('확인');
       console.log(wantingMaterial);
     } else {
@@ -61,6 +67,7 @@ window.onload = function(){
         }
       }
       checkNum[2] = 0;
+      selectedNothingCheck--;
       menuButton2[2].style.backgroundColor="white";
       menuButton2[2].style.color="black";
       console.log('확인');
@@ -73,6 +80,7 @@ window.onload = function(){
       checkNum[3] = 1;
       menuButton2[3].style.backgroundColor="blue";
       menuButton2[3].style.color="white";
+      selectedNothingCheck++;
       console.log('확인');
       console.log(wantingMaterial);
     } else {
@@ -82,6 +90,7 @@ window.onload = function(){
         }
       }
       checkNum[3] = 0;
+      selectedNothingCheck--;
       menuButton2[3].style.backgroundColor="white";
       menuButton2[3].style.color="black";
       console.log('확인');
@@ -94,6 +103,7 @@ window.onload = function(){
       checkNum[4] = 1;
       menuButton2[4].style.backgroundColor="blue";
       menuButton2[4].style.color="white";
+      selectedNothingCheck++;
       console.log('확인');
       console.log(wantingMaterial);
     } else {
@@ -103,6 +113,7 @@ window.onload = function(){
         }
       }
       checkNum[4] = 0;
+      selectedNothingCheck--;
       menuButton2[4].style.backgroundColor="white";
       menuButton2[4].style.color="black";
       console.log('확인');
@@ -115,6 +126,7 @@ window.onload = function(){
       checkNum[5] = 1;
       menuButton2[5].style.backgroundColor="blue";
       menuButton2[5].style.color="white";
+      selectedNothingCheck++;
       console.log('확인');
       console.log(wantingMaterial);
     } else {
@@ -124,6 +136,7 @@ window.onload = function(){
         }
       }
       checkNum[5] = 0;
+      selectedNothingCheck--;
       menuButton2[5].style.backgroundColor="white";
       menuButton2[5].style.color="black";
       console.log('확인');
@@ -132,13 +145,24 @@ window.onload = function(){
   });
 
   pushButton[0].addEventListener('click',() => {
-    localStorage.setItem('wantingList',wantingMaterial);
+    if(selectedNothingCheck>0){
+      localStorage.setItem('wantingList',wantingMaterial);
+      location.href = "loading.html";
+    }else {
+      alert('재료 하나 이상을 선택해주세요!');
+    }
   });
   pushButton[1].addEventListener('click',() => {
     localStorage.removeItem('wantingList');
   });
   pushButton[2].addEventListener('click',() => {
     localStorage.setItem('wantingList',wantingMaterial);
+    if(selectedNothingCheck>0){
+      localStorage.setItem('wantingList',wantingMaterial);
+      location.href = "loading.html";
+    }else {
+      alert('재료 하나 이상을 선택해주세요!');
+    }
   });
   pushButton[3].addEventListener('click',() => {
     localStorage.removeItem('wantingList');

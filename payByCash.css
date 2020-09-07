@@ -1,3 +1,31 @@
+@media all and (min-width: 1082px){
+  .img{
+      width: 500px;
+      height: 300px;
+      display: block;
+      margin: 0px auto;
+  }
+
+  .title{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .explanation{
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .buttonArea{
+    text-align: center;
+  }
+
+  .push{
+    font-size: 40px;
+  }
+}
+
 @media all and (min-width: 769px) and (min-height: 1367px) and (max-width: 1081px) and (max-height: 1920px){
   .img{
       width: 800px;
