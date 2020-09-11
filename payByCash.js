@@ -3,7 +3,7 @@ window.onload = function(){
 
   function nextStep(){
     setTimeout(()=>{
-      location.href = 'paymentLoading.html';
+      location.href = 'cashReceipt.html';
     },4000);
     setTimeout(()=>{
       localStorage.setItem('payCheck', '완료');
