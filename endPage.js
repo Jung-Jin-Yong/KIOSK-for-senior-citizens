@@ -3,7 +3,7 @@ window.onload = function(){
   let menuImg = document.querySelector('.menuImg');
   function showEffect(){
     menuImg.src = `images/${localStorage.selectingMenuForSearchingImage}.jpg`;
-    saveToFile_Chrome("orderList.text", JSON.stringify(localStorage));
+    saveToFile_Chrome("orderList.json", JSON.stringify(localStorage));
     localStorage.removeItem('firstStep');
     localStorage.removeItem('payCheck');
     localStorage.removeItem('payBy');
